@@ -2,19 +2,19 @@
 # to use amazon linux, ubuntu or debian.
 instance_configurations = {
   "master" = {
-    instance_type = "t3.micro"
+    instance_type = "t2.medium"
     name          = "master-instance"
     user_data     = "install.sh"
     ami           = "amazon"
   },
   "node1" = {
-    instance_type = "t3.micro"
+    instance_type = "t2.medium"
     name          = "node1-instance"
     user_data     = ""
     ami           = "amazon"
   },
   "node2" = {
-    instance_type = "t4g.micro"
+    instance_type = "t2.medium"
     name          = "node2-instance"
     user_data     = ""
     ami           = "ubuntu"
